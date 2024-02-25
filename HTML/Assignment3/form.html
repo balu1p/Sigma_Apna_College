@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form </title>
+</head>
+<body>
+    <form action="/server">
+        <label for="name">Name :</label>
+        <input type="text" placeholder="name" id="name" name="stud">
+        <div>Sex: 
+            
+            <input type="radio" name="M" id="M" value="M">
+            <label for="M">Male</label>
+            <input type="radio" name="M" id="F" value="F">
+            <label for="F">Female</label>
+        </div>
+        <p>Country :</p>
+        <select name="country" id="country">
+            <option>select country</option>
+            <option value="India">India</option>
+            <option value="Russia">Russia</option>
+        </select>
+        <p>Message :</p>
+        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+        <input type="checkbox" name="subscribe" id="subscribe">
+        <label for="subscribe">subscribe?</label>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
