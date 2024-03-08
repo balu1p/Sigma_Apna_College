@@ -1,0 +1,40 @@
+#pets {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    border: 2px solid #000000;;
+    border-radius: 10px;
+}
+.card img {
+    width: 350px;
+    height: 250px;
+}
+.card h3 {
+    text-align: center;
+}
+.card p {
+   font-size: 15px;
+   padding: 2px;
+}
+
+@media (max-width:800px) {
+    #pets {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+@media (min-width:800px) {
+    #pets {
+        display: flex;
+        
+        justify-content: center;
+        gap: 50px;
+    }
+}
