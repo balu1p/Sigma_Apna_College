@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+</head>
+<body>
+    <h1>Employee Data</h1>
+    <br/>
+    <hr>
+    <% for(emp of employeeData) {%>
+        <h2>Employee_Name : <%= emp.name %></h2>
+        <h3>Employee_Email : <%= emp.email %></h3>
+        <p>Employee_Profession : <%= emp.profession %></p>
+        <br/>
+     
+        <a href="http://localhost:4000/employee/<%= emp.id %>">see employee</a>
+        <a href="http://localhost:4000/employee/<%= emp.id %>/edit">edit</a>
+        <form method="POST" action="/employee/<%= emp.id %>?_method=DELETE">
+            <button>Delete</button>
+        </form>
+        <hr>
+        <% } %>
+        <a href="http://localhost:4000/employee/new">Add new employee_data</a>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Page</title>
+</head>
+<body>
+    <h2>Edit Page</h2>
+    <h3>Employee_Name : <%= emp.name %></h3>
+    <h3>Employee_Email : <%= emp.email %></h3>
+    
+    <form method="POST" action="/employee/<%= emp.id %>?_method=PATCH">
+        <textarea name="profession" id="" cols="30" rows="10"><%= emp.profession %></textarea>
+        <button type="submit">Submit</button>
+      </form>
+</body>
+</html>
